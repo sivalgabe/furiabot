@@ -33,6 +33,12 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
 
+    await update.message.reply_text(respostas.oi)
+    
+    await update.message.reply_text(respostas.resposta_escolha,
+        reply_markup=reply_markup
+    )
+
 async def send_main_menu(update: Update):
     keyboard = [
         [menustrings.menu_historia, menustrings.menu_titulos],
@@ -42,8 +48,7 @@ async def send_main_menu(update: Update):
     ]
     reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
 
-    await update.message.reply_text(
-        "Escolhe uma opção por favooooor:",
+    await update.message.reply_text(respostas.resposta_escolha,
         reply_markup=reply_markup
     )
 
