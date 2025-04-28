@@ -27,26 +27,23 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
         [menustrings.menu_historia, menustrings.menu_titulos],
         [menustrings.menu_elenco, menustrings.menu_transf],
-        [menustrings.menu_jogos, menustrings.menu_result]
+        [menustrings.menu_jogos, menustrings.menu_result],
+        [menustrings.menu_links, menustrings.menu_furia]
     ]
 
     reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
-
-    await update.message.reply_text(
-        "Olá, Furiose, seja bem vinde ao canal oficial da Pantera no CS! Escolhe uma opção aí:",
-        reply_markup=reply_markup
-    )
 
 async def send_main_menu(update: Update):
     keyboard = [
         [menustrings.menu_historia, menustrings.menu_titulos],
         [menustrings.menu_elenco, menustrings.menu_transf],
-        [menustrings.menu_jogos, menustrings.menu_result]
+        [menustrings.menu_jogos, menustrings.menu_result],
+        [menustrings.menu_links, menustrings.menu_furia]
     ]
     reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
 
     await update.message.reply_text(
-        "Vamos tentar outra vez?",
+        "Escolhe uma opção por favooooor:",
         reply_markup=reply_markup
     )
 
@@ -74,6 +71,14 @@ async def debug_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif text == menustrings.menu_result:
         await update.message.reply_text(respostas.resposta_result)
         await update.message.reply_text(respostas.resultados)
+    elif text == menustrings.menu_links:
+        await update.message.reply_text(respostas.resposta_links)
+        await update.message.reply_text(respostas.links)
+    elif text == menustrings.menu_furia:
+        await update.message.reply_animation("https://media1.tenor.com/m/8gb7Dcwb6jMAAAAd/furiacs-furia.gif")
+    elif text == menustrings.menu_oi:
+        await update.message.reply_text(respostas.oi)
+        await send_main_menu(update)
     else:
         await update.message.reply_text(respostas.tente_novamente)
         await send_main_menu(update)
