@@ -1,4 +1,4 @@
-# Pantera News
+# 🐾 Pantera News 🐾 📰📰📰
 
 [![Deploy on Railway](https://img.shields.io/badge/hosted%20on-Railway-blueviolet)](https://railway.app/)
 
@@ -7,9 +7,11 @@ Hospedado na [Railway](https://railway.com/), com desenvolvimento focado em orga
 
 > Acesse o bot no Telegram: [@pantera_furiacs_bot](https://t.me/pantera_furiacs_bot)
 
+![Image](https://github.com/user-attachments/assets/e3ae8340-2b4e-4574-9284-84c4e3327181)
+
 ---
 
-## Tecnologias Utilizadas
+## 🐾 Tecnologias Utilizadas 🐾 💻💻💻
 
 - *Python*;
 - *python-telegram-bot*: framework para integrar com a API do Telegram;
@@ -21,13 +23,13 @@ Hospedado na [Railway](https://railway.com/), com desenvolvimento focado em orga
 
 ---
 
-## Como Usar o Bot no Telegram
+## 🐾 Como Usar o Bot no Telegram 🐾 📱📱📱
 
 1. Entre em [@pantera_furiacs_bot](https://t.me/pantera_furiacs_bot) no Telegram.
 2. Use os comandos disponíveis conforme as instruções no próprio bot.
 3. Se divirta!
 
-### Comandos Disponíveis:
+### Comandos Disponíveis: 
 - **/start** - Da inícioà utilização do bot;
 - **oi** - Responde com um "Oie " seguido de instruções;
 - **História do Time** - Conta de forma resumida a trajetória da FURIA CS;
@@ -43,7 +45,7 @@ Hospedado na [Railway](https://railway.com/), com desenvolvimento focado em orga
 
 ---
 
-## Arquitetura e Decisões de Projeto
+## 🐾 Arquitetura e Decisões de Projeto 🐾 📚📚📚
 
 - **Modularização**: Strings, Funções e Handlers separados para organização e fácil manutenção;
 - **Logs**: Feedback pelo terminal para acompanhamento de comportamento do Bot em tempo real;
@@ -52,7 +54,7 @@ Hospedado na [Railway](https://railway.com/), com desenvolvimento focado em orga
 
 ---
 
-## Como contribuir
+## 🐾 Como contribuir 🐾 ✏️✏️✏️
 
 Teve uma idéia legal e quer colaborar com o Pantera News
 1. **Fork** o projeto.
@@ -65,4 +67,4 @@ Teve uma idéia legal e quer colaborar com o Pantera News
 
 ---
 
-## Feito com muito amor e muita FURIA!
+## 🐾 Feito com muito amor e muita FURIA! 🐾 📣📣📣
